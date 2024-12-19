@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HistoriX - Journey Through Time</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🕰️</text></svg>">
+    
+    <!-- External Libraries -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>HistoriX</h1>
+                <p>Exploring the Tapestry of Human History</p>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#map-section">Interactive Map</a></li>
+                <li><a href="#timeline-section">Historical Timeline</a></li>
+                <li><a href="#ai-section">AI Insights</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="hero-content">
+                <h2>Unravel the Stories of Our Past</h2>
+                <p>Dive deep into historical narratives, explore interactive maps, and discover the connections that shape our world.</p>
+                <a href="#map-section" class="cta-button">Start Exploring</a>
+            </div>
+        </section>
+
+        <section id="map-section">
+            <div class="section-header">
+                <h2>Global Historical Atlas</h2>
+                <p>Navigate through time and space with our interactive historical map</p>
+            </div>
+            <div id="map-container">
+                <div id="map"></div>
+            </div>
+        </section>
+
+        <section id="timeline-section">
+            <div class="section-header">
+                <h2>Historical Timeline</h2>
+                <p>Journey through different eras and explore pivotal moments in human history</p>
+            </div>
+            <div class="timeline-controls">
+                <input type="range" id="timeline-slider" min="-2500" max="2024" step="25" value="2024">
+                <p id="selected-year">Selected Year: 2024</p>
+            </div>
+            <div id="era-info">
+                <div class="era-details">
+                    <h3 id="era-title">Contemporary Era</h3>
+                    <p id="era-description">Explore the current global landscape and recent historical developments.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="ai-section">
+            <div class="section-header">
+                <h2>AI Historical Assistant</h2>
+                <p>Get instant insights, answer historical questions, and explore deeper connections</p>
+            </div>
+            <div class="ai-chat-container">
+                <div id="chat-messages"></div>
+                <div class="chat-input-area">
+                    <input type="text" id="ai-chat-input" placeholder="Ask a historical question...">
+                    <button id="send-chat">Send</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h3>HistoriX</h3>
+                <p>Connecting Humanity Through Historical Exploration</p>
+            </div>
+            <div class="footer-links">
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+                <a href="#">Privacy Policy</a>
+            </div>
+            <div class="social-links">
+                <a href="#" class="social-icon">Twitter</a>
+                <a href="#" class="social-icon">LinkedIn</a>
+            </div>
+        </div>
+        <div class="copyright">
+            © 2024 HistoriX. All Rights Reserved.
+        </div>
+    </footer>
+
+    <!-- External Libraries -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    
+    <!-- Custom Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
